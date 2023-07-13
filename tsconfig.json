@@ -9,11 +9,15 @@
     "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    },
     //Позволяет рабоать с пакетами,которые используют
     //common.js как с обычными с помощью import (require() module.export) = common.js
     "esModuleInterop": true,
     //Позволяет использовать обычные импорты без *
-    "allowSyntheticDefaultImports": true,
+    "allowSyntheticDefaultImports": true
   },
   "ts-node": {
     "compilerOptions": {
